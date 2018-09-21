@@ -6,12 +6,16 @@
 using namespace std;
 
 int main(int argc, char** argv) {
-cout<<"Program ini akan menghitung mundur nilai"
-    <<"dari 10 sampai 0" << endl << endl;
-    for (int i = 10; i >= 0; i--)
-    {
-     cout<< i << endl;
-     }
-    cout<<endl<<"Pernyataan ini berada diluar looping"<<endl;
-    return 0;
-    }
+char cPilihan; 
+string szNama;
+do
+{
+cout<<"Masukan Nama Anda : ";
+cin>>szNama;
+cout<<"Nama Anda adalah "<<szNama<<endl<<endl
+	<<"Mau mengulang lagi (y/n)? ";
+	cin>>cPilihan;
+} while (cPilihan == 'y' || cPilihan == 'Y');
+cout<<"Disini sudah bukan wilayah loop"<<endl;
+return 0;
+}
